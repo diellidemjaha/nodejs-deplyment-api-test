@@ -3,7 +3,11 @@ const cors = require('cors');
 const app = express();
 
 
-app.use(cors());
+app.use(cors({
+  origin: "https://effervescent-gaufre-f05d8c.netlify.app",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type"]
+}));
 
 app.get('/api/info', (req, res) => {
     res.json({message: "Welcome to the Mini Blog - Message from API"});

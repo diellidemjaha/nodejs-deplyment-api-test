@@ -12,5 +12,5 @@ app.get('/api/info', (req, res) => {
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-    console.log('baclemd runnig on https://localhost:5000');
+    console.log('backend running...');
 });

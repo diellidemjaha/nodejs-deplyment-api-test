@@ -3,8 +3,9 @@ const cors = require('cors');
 const app = express();
 
 
+
 app.use(cors({
-  origin: "https://effervescent-gaufre-f05d8c.netlify.app",
+  origin: "0.0.0.0",
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type"]
 }));
